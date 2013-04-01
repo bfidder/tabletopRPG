@@ -1,4 +1,25 @@
 TabletopRPG::Application.routes.draw do
+  root :to => 'pages#index'
+
+  get 'admin' => 'admin#index'
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+  
+  resources :users
+
+  get "sessions/new"
+
+  get "sessions/create"
+
+  get "sessions/destroy"
+
+  resources :users
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
