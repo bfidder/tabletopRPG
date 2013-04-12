@@ -1,4 +1,10 @@
 TabletopRPG::Application.routes.draw do
+  resources :attributes
+
+
+  resources :characters
+
+
   root :to => 'pages#index'
 
   get 'admin' => 'admin#index'

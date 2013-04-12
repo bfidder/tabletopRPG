@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   attr_accessible :password, :password_confirmation, :password_digest, :name, :firstname, :lastname, :avatar 
   validates :name, presence: true, uniqueness: true
   has_secure_password
+	
+	has_many :characters
 
   has_attached_file :avatar
   
