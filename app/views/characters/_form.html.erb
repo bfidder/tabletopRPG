@@ -20,6 +20,11 @@
     <%= f.text_field :creator %>
   </div>
   <div class="actions">
+		<%= button_to "Refresh", new_character_path, :method => :get %>
+		<%= button_to "Add Attribute", new_attribute_path %>
+		<%= button_to "Add Skill", new_skill_path %>
+		<%= button_to "Add Equipment", new_equipment_path %>
     <%= f.submit %>
   </div>
+
 <% end %>

@@ -1,4 +1,13 @@
 TabletopRPG::Application.routes.draw do
+  resources :games
+
+
+  resources :equipment
+
+
+  resources :skills
+
+
   resources :attributes
 
 

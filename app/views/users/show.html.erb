@@ -17,7 +17,7 @@
   <%= @user.lastname %>
 </p>
 
-
-
+<%= link_to 'Make New Character', new_character_path %> |
+<%= link_to 'Characters', characters_path %> |
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
