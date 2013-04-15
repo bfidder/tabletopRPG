@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130412013011) do
+ActiveRecord::Schema.define(:version => 20130412212655) do
 
   create_table "attributes", :force => true do |t|
     t.string   "name"
     t.integer  "value"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "character_id"
   end
 
   create_table "characters", :force => true do |t|
@@ -25,14 +26,16 @@ ActiveRecord::Schema.define(:version => 20130412013011) do
     t.string   "creator"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "equipment", :force => true do |t|
     t.string   "name"
     t.integer  "value"
     t.string   "type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "character_id"
   end
 
   create_table "games", :force => true do |t|
@@ -45,8 +48,9 @@ ActiveRecord::Schema.define(:version => 20130412013011) do
   create_table "skills", :force => true do |t|
     t.string   "name"
     t.integer  "value"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "character_id"
   end
 
   create_table "users", :force => true do |t|

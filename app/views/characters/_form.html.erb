@@ -19,11 +19,98 @@
     <%= f.label :creator %><br />
     <%= f.text_field :creator %>
   </div>
+	<%# not sure of a better way to format this file and cut down on the repetitveness? %>
+	<h1>Attributes</h1>
+	<div>
+		<%= label_tag(:strength, value = "Strength") %>
+		<%= text_field_tag(:strength_value, "", {placeholder: "0", size: 3}) %><br/> 
+		<%= label_tag(:agility, value = "Agility") %>
+		<%= text_field_tag(:agility_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:intelligence, value = "Intelligence") %>
+		<%= text_field_tag(:intelligence_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:willpower, value = "Willpower") %>
+		<%= text_field_tag(:willpower_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:awareness, value = "Awareness") %>
+		<%= text_field_tag(:awareness_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:vitality, value = "Vitality") %>
+		<%= text_field_tag(:vitality_value, "",  {placeholder: "0", size: 3}) %><br/>
+	</div>
+
+	<h1>Skills</h1>
+	<div>
+		<%= label_tag(:athletics, value = "Athletics") %>
+		<%= text_field_tag(:athletics_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:artistry, value = "Artistry") %>
+		<%= text_field_tag(:artistry_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:animal_handling, value = "Animal Handling") %>
+		<%= text_field_tag(:animal_handling_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:covert, value = "Covert") %>
+		<%= text_field_tag(:covert_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:craft, value = "Craft") %>
+		<%= text_field_tag(:craft_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:disipline, value = "Disipline") %>
+		<%= text_field_tag(:disipline_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:guns, value = "Guns") %>
+		<%= text_field_tag(:guns_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:heavy_weapons, value = "Heavy Weapons") %>
+		<%= text_field_tag(:heavy_weapons_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:influence, value = "Influence") %>
+		<%= text_field_tag(:influence_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:knowledge, value = "Knowledge") %>
+		<%= text_field_tag(:knowledge_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:mech_eng, value = "Mech. Eng.") %>
+		<%= text_field_tag(:mech_eng_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:linguist, value = "Linguist") %>
+		<%= text_field_tag(:linguist_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:medical_expr, value = "Medical Experience") %>
+		<%= text_field_tag(:medical_expr_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:melee, value = "Melee") %>
+		<%= text_field_tag(:melee_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:perception, value = "Perception") %>
+		<%= text_field_tag(:perception_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:performance, value = "Performance") %>
+		<%= text_field_tag(:performance_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:pilot, value = "Pilot") %>
+		<%= text_field_tag(:pilot_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:planetary_vech, value = "Planetary Vechicles") %>
+		<%= text_field_tag(:planetary_vech_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:ranged_weapons, value = "Ranged Weapons") %>
+		<%= text_field_tag(:ranged_weapons_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:scientific_expr, value = "Scientific Experience") %>
+		<%= text_field_tag(:scientific_expr_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:survival, value = "Survival") %>
+		<%= text_field_tag(:survival_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:tech_expr, value = "Technical Experience") %>
+		<%= text_field_tag(:tech_expr_value, "",  {placeholder: "0", size: 3}) %><br/>
+		<%= label_tag(:unarmed_combat, value = "Unarmed Combat") %>
+		<%= text_field_tag(:unarmed_combat_value, "",  {placeholder: "0", size: 3}) %><br/>
+
+	</div>
+	<h1>Equipment</h1>
+	<div>
+		<%= label_tag(:money, value = "Money") %>
+		<%= text_field_tag(:money_value, "",  {placeholder: "0", size: 5}) %><br/>
+		<%= label_tag(:gun, value = "Gun") %>
+		<%= label_tag(:gun_value, value = "Damage") %>
+		<%= text_field_tag(:gun_value1, "",  {placeholder: "0", size: 3}) %>
+		<%= label_tag(:gun_type, value = "Type") %>
+		<%= text_field_tag(:gun_type1, "",  {placeholder: "pistol", size: 15}) %><br/>
+		<%= label_tag(:gun, value = "Gun") %>
+		<%= label_tag(:gun_value, value = "Damage") %>
+		<%= text_field_tag(:gun_value2, "",  {placeholder: "0", size: 3}) %>
+		<%= label_tag(:gun_type, value = "Type") %>
+		<%= text_field_tag(:gun_type2, "",  {placeholder: "rifle", size: 15}) %><br/>
+		<%= label_tag(:armor, value = "Armor") %>
+		<%= label_tag(:armor_value, value = "Protection") %>
+		<%= text_field_tag(:armor_value, "",  {placeholder: "0", size: 3}) %>
+		<%= label_tag(:armor_type, value = "Type") %>
+		<%= text_field_tag(:gun_type, "",  {placeholder: "bullet proof jacket", size: 15}) %><br/>
+	</div>
   <div class="actions">
-		<%= button_to "Refresh", new_character_path, :method => :get %>
-		<%= button_to "Add Attribute", new_attribute_path %>
-		<%= button_to "Add Skill", new_skill_path %>
-		<%= button_to "Add Equipment", new_equipment_path %>
+	<%# these will be for adding new dynamic character attributes, skills, and equipment %>
+	<%#	<br/><%= button_to "Add Attribute", new_attribute_path, :method => :create %>
+	<%#	<%= button_to "Add Skill", new_skill_path, :method => :create %>
+	<%#	<%= button_to "Add Equipment", new_equipment_path, :method => :create %>
     <%= f.submit %>
   </div>
 
