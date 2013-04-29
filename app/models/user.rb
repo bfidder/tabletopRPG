@@ -5,8 +5,9 @@ class User < ActiveRecord::Base
 	
 	has_many :characters
 
-  has_attached_file :avatar,
-										:path => "cs446/fidder/#{Rails.env}:url"
+	#tried to add avatars, got lots of errors
+  has_attached_file :avatar
+										#:path => "cs446/fidder/#{Rails.env}:url"
   
   validates_attachment_presence :avatar
   validates_attachment_size :avatar, :less_than => 5.megabytes
