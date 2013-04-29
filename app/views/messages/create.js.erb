@@ -1,2 +1,2 @@
-$("#chat").append("<%= escape_javascript render(@message) %>");
+$("#chat").append("<tr><td><%= escape_javascript @message.name %></td><td><%=escape_javascript @message.content %></td><td><%= @message.created_at %></td></tr>");
 $("#new_message")[0].reset();

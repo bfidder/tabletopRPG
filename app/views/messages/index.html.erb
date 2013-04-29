@@ -1,7 +1,11 @@
-<% title "Chat" %>
+<h1>Chat</h1>
 
 <ul id="chat">
-	<%= render @messages %>
+	<% if not @messages.nil? %>
+		<%= @messages.each do |m| %>
+			<% m.content %>
+		<% end %>
+	<% end %>
 </ul>
 
 <%=form_for Message.new, :remote => true do |f| %>

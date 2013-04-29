@@ -1,10 +1,16 @@
 <h1>Chat</h1>
 
-<ul id="chat">
+<table id="chat">
 	<% if not @messages.nil? %>
-		<%= render @messages %>
+		<%= @messages.each do |m| %>
+			<tr>
+				<td><% m.name %></td>
+				<td><% m.content %></td>
+				<td><% m.created_at %></td>
+			</tr>
+		<% end %>
 	<% end %>
-</ul>
+</table>
 
 <%=form_for Message.new, :remote => true do |f| %>
 	<%= f.text_field :content %>
