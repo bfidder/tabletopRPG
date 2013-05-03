@@ -1,7 +1,8 @@
-<h1>Hello!</h1>
+<h1>Character Sheet Manager</h1>
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <%end %>
+<%= @joke.body %>
 <ul>
   <li><%= link_to 'Register', new_user_path %></li>
   <li><%= link_to 'Login', login_url %></li>
